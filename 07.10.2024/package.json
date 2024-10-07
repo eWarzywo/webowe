@@ -1,0 +1,19 @@
+{
+  "name": "07.10.2024",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.7.4",
+    "@types/typescript": "^0.4.29",
+    "express": "^4.21.0",
+    "fs": "^0.0.1-security",
+    "mime": "^4.0.4"
+  }
+}
