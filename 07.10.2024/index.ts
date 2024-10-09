@@ -39,24 +39,8 @@ app.get('/get_params', (req, res) => {
     res.json({ ok: 'ok' });
 });
 
-app.use('/assets', express.static('assets'));
+app.use(express.static('assets'));
 
-app.use(async (req, res) => {
-    const path = './assets' + req.path;
-    console.log(path);
-    console.log(mime.getType(path));
-    fs.readFile(path, (err, data) => {
-        if (err) {
-            res.status(404).json({ error: 'Not found' });
-            return;
-        }
-        else {
-            const type = mime.getType(path);
-            res.setHeader('Content-Type', type);
-            res.send(data);
-        }
-    });
-});
 
 app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
