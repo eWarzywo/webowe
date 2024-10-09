@@ -1,17 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-// dla pierwszej ścieżki - tekst "Strona główna"
-// dla drugiej ścieżki - dowolny dokument w formacie JSON
-// dla trzeciej ścieżki - dokument HTML generowany wewnątrz kodu Node.js
-// dla czwartej ścieżki - dokument HTML pobrany z pliku
-// Dodaj ścieżkę /get_params
-// Dla ścieżki /get_params wyświetl w konsoli Node.js parametry przekazane metodą GET.
-//     Parametry GET skonwertuj do tablicy i zapisz w pliku params_{timestamp}.json, gdzie timestamp to timestamp przyjęcia danych. Format danych to JSON.
-//     Zwróć ze ścieżki dane JSON o treści {'ok': 'ok'}
-// Dla niezdefiniowanych wcześniej ścieżek szukaj pliku o nazwie wskazanej przez ścieżkę w folderze /assets
-// W przypadku znalezienia pliku zwróć go z opowiednim typem MIME (np. dla /x.html zwróć plik z MIME text/html)
-// W przypadku braku pliku zwróć błąd 404 w formacie JSON. Pamiętaj o odpowiednim kodzie statusu HTTP
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.send('Strona główna');
