@@ -1,0 +1,79 @@
+//make simple scss for
+// <Router>
+//            <div className="app">
+//                <header className="header">
+//                    <div className="container">
+//                        <h1 className="logo">My Blog</h1>
+//                        <nav className="nav">
+//                            <Link to="/" className="nav__link">Home</Link>
+//                            <Link to="/categories" className="nav__link">Categories</Link>
+//                            <Link to="/post/1" className="nav__link">Post</Link>
+//                        </nav>
+//                    </div>
+//                </header>
+//                <main className="main-content">
+//                    <Routes>
+//                        <Route path="/" element={<Home />} />
+//                        <Route path="/post/:id" element={<Post />} />
+//                        <Route path="/categories" element={<Categories />} />
+//                    </Routes>
+//                </main>
+//                <footer className="footer">
+//                    <div className="container">&copy; 2024 My Blog</div>
+//                </footer>
+//            </div>
+//        </Router>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 700px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
