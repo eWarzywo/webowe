@@ -1,0 +1,4 @@
+Courses:
+- Informatyka
+- Ekonomia
+- Socjologia
